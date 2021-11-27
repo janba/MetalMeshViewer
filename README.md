@@ -2,7 +2,7 @@
 
 _A simple triangle mesh viewer for MacOS_
 
-This application is a simple (triangle) mesh viewer that should be capable of rendering even large meshes interactively on a Mac. It was made by create a project with the game template using Swift and Metal. Since speed is often best attained using native tools, the code is mostly written in Swift, using Metal for the shaders. However, models are loaded using the Assimp library via a C/C++ bridge. Using Assimp for model loading ensures that a fairly wide range of file formats are supported. 
+This application is a simple (triangle) mesh viewer that should be capable of rendering even large meshes interactively on a Mac. It was made by creating a project with the game template using Swift and Metal. Models are loaded using the Assimp library via a C/C++ bridge. Using Assimp for model loading ensures that a fairly wide range of file formats are supported. 
 
 From a graphics point of view, the project is kept as simple as possible. The shading is based on matcaps. Smooth shading, flat shading and wireframe rendering modes are supported. While assets may contain textures, these are not used by the viewer since the focus is on the geometry.
 
