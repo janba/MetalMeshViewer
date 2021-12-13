@@ -142,7 +142,7 @@ class AppViewController: NSViewController {
         case 6:
             renderer.set_up_axis(axis: 2)
             return true
-        case 18...21:
+        case 18...20:
             let mat_cap_idx = Int(event.keyCode-18)
             renderer.set_matcap(matcap_no: mat_cap_idx)
             return true

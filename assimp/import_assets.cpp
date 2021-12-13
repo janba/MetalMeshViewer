@@ -36,11 +36,9 @@ void* new_importer(const char* file) {
     // probably to request more postprocessing than we do in this example.
     importer_ptr->ReadFile( string(file),
                            aiProcess_Triangulate            |
-                           aiProcess_JoinIdenticalVertices  |
                            aiProcess_GenSmoothNormals       |
-                           aiProcess_ForceGenNormals        |
-                           aiProcess_OptimizeGraph          |
-                           aiProcess_SortByPType);
+                           aiProcess_JoinIdenticalVertices  |
+                           aiProcess_OptimizeMeshes);
 
     return reinterpret_cast<void*>(importer_ptr);
 }

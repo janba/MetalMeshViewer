@@ -130,7 +130,7 @@ class Renderer: NSObject, MTKViewDelegate {
             return nil
         }
 
-        for fn in ["matcap0", "matcap1", "matcap2", "matcap3"] {
+        for fn in ["matcap0", "matcap1", "matcap2"] {
             let mat_cap = try? Renderer.load_texture(device: device, textureName: fn)
             
             if mat_cap != nil {
